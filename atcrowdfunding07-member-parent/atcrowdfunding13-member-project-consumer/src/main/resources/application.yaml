@@ -20,11 +20,11 @@ eureka:
 
 aliyun:
   oss:
-    access-key-id: LTAI5t7Gocz4ptTxuUSM4zx2
-    access-key-secret: BkGOA6WwtW8SoQYMtr7vqWVByDZEt9
-    bucket-domain: http://mystudyatguigu.oss-cn-beijing.aliyuncs.com
+    access-key-id: XXX
+    access-key-secret: XXX
+    bucket-domain: http://XXX
     bucket-name: mystudyatguigu
-    end-point: http://oss-cn-beijing.aliyuncs.com
+    end-point: http://XXX
 
 ribbon:
   ReadTimeout: 50000

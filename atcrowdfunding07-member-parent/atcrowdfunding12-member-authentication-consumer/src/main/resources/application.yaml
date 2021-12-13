@@ -1,0 +1,30 @@
+server:
+  port: 4000
+
+spring:
+  application:
+    name: atguigu-crowd-auth
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.0.19
+  session:
+    store-type: redis
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+short:
+  message:
+    appcode: fb7658966d164f19bb79fb1c5d21e910
+    host: https://fesms.market.alicloudapi.com
+    path: /sms/
+    sign: 1
+    skin: 1
+
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000

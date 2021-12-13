@@ -1,0 +1,31 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: atguigu-crowd-project
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  #  做Session共享（用到Redis）
+  redis:
+    host: 192.168.0.19
+  session:
+    store-type: redis
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+aliyun:
+  oss:
+    access-key-id: LTAI5t7Gocz4ptTxuUSM4zx2
+    access-key-secret: BkGOA6WwtW8SoQYMtr7vqWVByDZEt9
+    bucket-domain: http://mystudyatguigu.oss-cn-beijing.aliyuncs.com
+    bucket-name: mystudyatguigu
+    end-point: http://oss-cn-beijing.aliyuncs.com
+
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
